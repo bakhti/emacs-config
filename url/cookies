@@ -1,0 +1,17 @@
+;; Emacs-W3 HTTP cookies file
+;; Automatically generated file!!! DO NOT EDIT!!!
+
+(setq url-cookie-storage
+ 'nil)
+(setq url-cookie-secure-storage
+ '(("wiki.techs.int"
+  [url-cookie "wikidbUserID" "8" "10-Apr-2013 00:13:37.00 GMT" "/" "wiki.techs.int" t]
+  [url-cookie "httponly" nil "10-Apr-2013 00:13:37.00 GMT" "/" "wiki.techs.int" t]
+  [url-cookie "wikidbUserName" "Bakhti" "10-Apr-2013 00:13:37.00 GMT" "/" "wiki.techs.int" t]
+  [url-cookie "wikidbToken" "95367ba759e2e8d91afa3cc1222f3a2b" "10-Apr-2013 00:13:37.00 GMT" "/" "wiki.techs.int" t]))
+)
+
+;; Local Variables:
+;; version-control: never
+;; no-byte-compile: t
+;; End:

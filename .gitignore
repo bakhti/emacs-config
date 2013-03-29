@@ -1,0 +1,15 @@
+bbdb
+el-get
+elpa
+*~
+*.elc
+.git
+.emacs.desktop
+.emacs.desktop.lock
+.ido.last
+semantic.cache
+*.log
+*-compile-script
+*-make-script
+rc/wl-config.el
+rc/gnus-config.el

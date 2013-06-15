@@ -42,7 +42,7 @@ a sound to be played"
     (message (concat title ": " msg))))
 
 ;; the appointment notification facility
-(setq appt-message-warning-time 15 ;; warn 15 min in advance
+(setq appt-message-warning-time 10 ;; warn 10 min in advance
       appt-display-mode-line t     ;; show in the modeline
       appt-display-format 'window) ;; use our func
 (appt-activate 1)              ;; active appt (appointment notification)
@@ -52,7 +52,6 @@ a sound to be played"
 
 (add-hook 'org-finalize-agenda-hook 'org-agenda-to-appt)
 
-;; our little façade-function for djcb-popup
 (defun ab/appt-display (min-to-app new-time msg)
   (ab/emacs-popup (format "Appointment in %s minute(s)" min-to-app) msg 
 	      "/usr/share/icons/gnome/32x32/status/appointment-soon.png"
@@ -85,6 +84,7 @@ a sound to be played"
   (make-frame '((name . "*Timetracker*") (width . 80) (height . 15)))
   (select-frame-by-name "*Timetracker*")
   (org-capture)
+  (delete-other-windows)
   (delete-other-windows)
 )
 

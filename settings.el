@@ -108,7 +108,10 @@
   :bind ("C-s-SPC" . ace-jump-mode))
 
 (use-package ace-window
-  :config (global-set-key [remap other-window] 'ace-window))
+  :config
+  (progn
+    (global-set-key [remap other-window] 'ace-window)
+    (setq aw-scope 'frame)))
 
 (use-package expand-region
   :bind ("C-=" . er/expand-region))
@@ -218,7 +221,7 @@
   :config  (setq markdown-command "markdown_py"))
 
 (use-package bakhti-functions
-  :load-path "~/.emacs.d/")
+  :load-path "~/.emacs.d/lisp")
 (use-package bakhti-key-bindings
-  :load-path "~/.emacs.d/")
+  :load-path "~/.emacs.d/lisp")
 

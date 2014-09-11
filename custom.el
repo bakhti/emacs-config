@@ -7,7 +7,6 @@
  '(desktop-load-locked-desktop t)
  '(desktop-save-mode t)
  '(electric-pair-mode t)
- '(horizontal-scroll-bar-mode nil)
  '(inhibit-startup-echo-area-message "bakhti")
  '(inhibit-startup-screen t)
  '(initial-major-mode (quote org-mode))

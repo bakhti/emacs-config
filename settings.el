@@ -1,3 +1,5 @@
+(diminish 'isearch-mode (string 32 #xf06e))
+
 (use-package dired
   :bind ("C-x C-j" . dired-jump)
   :config
@@ -27,11 +29,7 @@
   :config (setq eldoc-idle-delay 0.2))
 
 (use-package moe-theme
-  :init (moe-dark)
-  :config
-  (progn
-    (setq moe-theme-mode-line-color 'blue)
-    (powerline-moe-theme)))
+  :init (moe-dark))
 
 (use-package ido
   :init (ido-mode t)
@@ -215,6 +213,9 @@
 
 (use-package json-mode
   :mode ("\\.template\\'" . json-mode))
+
+(use-package yaml-mode
+  :mode ("\\.yml\\'" . yml-mode))
 
 (use-package markdown-mode
   :mode ("\\.md\\'" . markdown-mode)

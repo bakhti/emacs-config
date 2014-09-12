@@ -215,7 +215,7 @@
   :mode ("\\.template\\'" . json-mode))
 
 (use-package yaml-mode
-  :mode ("\\.yml\\'" . yml-mode))
+  :mode ("\\.yml\\'" . yaml-mode))
 
 (use-package markdown-mode
   :mode ("\\.md\\'" . markdown-mode)
